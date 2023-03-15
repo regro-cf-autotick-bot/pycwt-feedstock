@@ -1,6 +1,6 @@
 {% set name = "pycwt" %}
-{% set version = "0.3.0a22" %}
-{% set sha256 = "f99668ef2caf8d5020ef6bcbbcc86ee542d038ae7c5e1e80da12e5264445eb17" %}
+{% set version = "0.4.0b0" %}
+{% set sha256 = "f337cd28531f5b49a62b5f3ba5657cbc3e2f69e15a12ee3d309a2aa5ca1b8e86" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
@@ -36,7 +36,7 @@ about:
   license: BSD-3-clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'A Python module for continuous wavelet spectral analysis'
+  summary: A Python module for continuous wavelet spectral analysis
 
   description: |
     A Python module for continuous wavelet spectral analysis. It includes
